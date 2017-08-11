@@ -1,0 +1,50 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "38ead322-b337-4328-8c0f-0b221aa6af30"
+  "autocomplete-plus":
+    enableAutoActivation: false
+  core:
+    allowPendingPaneItems: false
+    audioBeep: false
+    closeEmptyWindows: false
+    destroyEmptyPanes: false
+    disabledPackages: [
+      "jsformat"
+      "pretty-json"
+      "minimap"
+      "atom-easy-jsdoc"
+      "html2jade-plus"
+      "docblockr"
+      "language-babel"
+    ]
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      "node_modules"
+    ]
+    telemetryConsent: "no"
+  editor:
+    autoIndentOnPaste: false
+    fontSize: 13
+    scrollPastEnd: true
+  "exception-reporting":
+    userId: "01c2028d-d24f-4a69-58e9-bf88102c7a22"
+  minimap:
+    displayCodeHighlights: false
+  "pretty-json":
+    notifyOnParseError: false
+  "tree-view":
+    hideVcsIgnoredFiles: false
+  welcome:
+    showOnStartup: false
+
+
+# ----- Install Packages -----
+# high-lightselected
+# nice-index
+# file-icons

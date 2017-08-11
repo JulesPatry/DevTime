@@ -1,0 +1,15 @@
+# Git branch in prompt.
+git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
+
+# Pointers
+#PS1='\007\033[32m\]\W \007\033[39m\]:'
+# \007\033[32m\]\W\007\033[34m\]\$(git_branch)\007\033[39m\]:
+LOCATION=' \033[01;36m\]`pwd | sed "s#\(/[^/]\{1,\}/[^/]\{1,\}/[^/]\{1,\}/\).*\(/[^/]\{1,\}/[^/]\{1,\}\)/\{0,1\}#\1_\2#g"`'
+export PS1="\n💎💎💎  \007\033[01;32m\]\t$LOCATION\007\033[34m\]\$(git_branch)\007\033[39m\]\n$ "

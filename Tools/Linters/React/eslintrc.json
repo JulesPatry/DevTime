@@ -1,0 +1,59 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+
+  "extends": [
+    "eslint:recommended",
+    "airbnb",
+    "standard-react"
+  ],
+
+  "plugins": [
+    "babel",
+    "react",
+    "standard"
+  ],
+
+  "globals": {
+    "document": false,
+    "navigator": false,
+    "window": false
+  },
+
+  "rules": {
+    "no-extra-semi": "error",
+    "no-dupe-args": "error",
+    "no-console": "warn",
+    "no-dupe-keys": "error",
+    "no-duplicate-case": "error",
+    "no-empty": "error",
+    "no-extra-boolean-cast": "error",
+    "no-unreachable": "error",
+    "strict": ["error", "never"],
+    "no-alert": 0,
+    "yoda": 0,
+    "rest-spread-spacing": ["error", "never"],
+    "jsx-quotes": [2, "prefer-single"],
+    "react/display-name": ["off", { "ignoreTranspilerName": false }],
+    "react/jsx-indent-props": ["error", 2],
+    "react/jsx-key": "off",
+    "react/jsx-no-duplicate-props": ["error", { "ignoreCase": true }],
+    "brace-style": 0,
+    "camelcase": 0,
+    "key-spacing": 0,
+    "no-space-before-semi": 0,
+    "semi": ["error", "always"],
+    "no-trailing-spaces": "error"
+  }
+}
