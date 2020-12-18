@@ -1,0 +1,13 @@
+NEWLINE=$'\n'
+PROMPT='%F{240}%F{red}@%F{green}%m:%F{141}%d$ %F{reset}'
+
+# Load version control information
+autoload -Uz vcs_info
+precmd() { vcs_info }
+
+# Format the vcs_info_msg_0_ variable
+zstyle ':vcs_info:git:*' formats '%F{green}%b'
+ 
+# Set up the prompt (with git branch name)
+setopt PROMPT_SUBST
+PROMPT='${NEWLINE}💎%F{008}${PWD/#$HOME} ${vcs_info_msg_0_} %F{141}%D{%L:%M:%S} ${NEWLINE}%F{white}> '
